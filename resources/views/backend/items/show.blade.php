@@ -17,6 +17,8 @@
 
 				<h5 class="text-dark pt-2">Product Price:{{$item->price}}<span class="text-muted"> </span></h5>
 				<h5 class="text-dark pt-2">Description:{{$item->description}}<span class="text-muted"></span> </h5>
+				<h5 class="text-dark pt-2">Brand:{{$item->brand->name}}<span class="text-muted"></span> </h5>
+				<h5 class="text-dark pt-2">Subcategory:{{$item->subcategory->name}}<span class="text-muted"></span> </h5>
 
 
 

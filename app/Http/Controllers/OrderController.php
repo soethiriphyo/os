@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Order;
+use Illuminate\Support\Facades\Auth;
 
 class OrderController extends Controller
 {
@@ -47,7 +48,7 @@ class OrderController extends Controller
         $order= new Order;
         $order->voucherno = uniqid();
         $order->orderdate = date('Y-m-d');
-        $order->user_id = 1;//auth id
+        $order->user_id = Auth::id();//auth id
         $order->note = $request->notes;
         $order->total =$total;
 

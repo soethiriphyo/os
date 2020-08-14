@@ -48,11 +48,16 @@
 			</div>
 
 			
+			@auth
+			<div class="col-md-6 mr-auto">
+				<a href="#" class="btn btn-info buy_now">Checkout</a>
+			</div>
+			@else
 
 			<div class="col-md-6 mr-auto">
-				<a href="#" class="btn btn-info buy_now">Buy Now</a>
+			<a href="{{route('login')}}" class="btn btn-info float-right">Login To Checkout</a>
 			</div>
-				 
+			@endauth 
 			
 		</div>
 	</div>

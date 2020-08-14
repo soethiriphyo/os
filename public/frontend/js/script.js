@@ -222,9 +222,9 @@ $.ajaxSetup({
 				if (response) {
 
 					alert(response);
-					// localStorage.clear();
-					// getData();
-					// location.href="/";
+					localStorage.clear();
+					getData();
+					location.href="/";
 
 				}
 			})

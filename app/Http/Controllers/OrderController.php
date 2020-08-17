@@ -15,6 +15,10 @@ class OrderController extends Controller
      */
     public function index()
     {
+        $orders = Order::all();
+        // dd($items);
+
+        return view('backend.orders.index',compact('orders'));
 
     }
 
@@ -106,6 +110,9 @@ class OrderController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $order =Order::find($id);
+        $order->delete();
+        //redirect
+        return redirect()->route('orders.index');
     }
 }

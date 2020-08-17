@@ -16,7 +16,9 @@ class FrontendController extends Controller
 
     public function items($value='')
     {
-    	return view('frontend.items');
+    	$items=Item::orderBy('id','desc')->take(6)->get();
+        // dd($items);
+        return view('frontend.items',compact('items'));
 
 
     }

@@ -20,11 +20,11 @@
 						<p>1500 MMK</p>
 										
 					</div>
-					<div class="card-footer">
+					{{-- <div class="card-footer">
 						<a href="#" class="btn btn-info btn-sm ml-auto">Add To Cart</a>
 						<a href="#" class="btn btn-primary btn-sm ml-5">Detail</a>
 
-					</div>
+					</div> --}}
 				</div>
 			</div>
 		</div>

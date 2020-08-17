@@ -4,7 +4,15 @@
 <div class="col-lg-9">
 	<h2>Profile Page</h2>
 
-<div class="container">
+
+
+  {{Auth::user()->name}}
+
+  {{Auth::user()->email}}
+
+{{-- <div class="container">
+
+
 
     <div class="card o-hidden border-0 shadow-lg my-5">
       <div class="card-body p-0">
@@ -76,7 +84,7 @@
       </div>
     </div>
 
-</div>
+</div> --}}
 	
 </div>
 

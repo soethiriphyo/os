@@ -8,7 +8,7 @@
 <div id="checkout_body">
 	<div class="container my-5 text-center">
 		<div class="row">
-			<div class="offset-md-2 col-md-8">
+			<div class="offset-md-2 col-md-10">
 				<h2 class="pb-2">Your Cart!</h2>
 				<div class="table-responsive">
 					<table class="table">
@@ -48,7 +48,7 @@
 			</div>
 
 			
-			@auth
+			@role('customer')
 			<div class="col-md-6 mr-auto">
 				<a href="#" class="btn btn-info buy_now">Checkout</a>
 			</div>
@@ -57,7 +57,7 @@
 			<div class="col-md-6 mr-auto">
 			<a href="{{route('login')}}" class="btn btn-info float-right">Login To Checkout</a>
 			</div>
-			@endauth 
+			@endrole 
 			
 		</div>
 	</div>

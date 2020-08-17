@@ -53,7 +53,18 @@ class OrderController extends Controller
 
         $total=0;
         foreach ($cartArr as $row) {
-            $total+=($row->price * $row->qty);
+
+            if ($row->discount) {
+            $total+=($row->discount * $row->qty);
+                
+            }else{
+                 $total+=($row->price * $row->qty);
+            }
+
+            // $total+=($row->price * $row->qty);
+
+           
+
         }
 
         $order= new Order;

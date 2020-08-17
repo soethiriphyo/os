@@ -17,7 +17,6 @@
 								<th>No.</th>
 								<th>Photo</th>
 								<th>Item Name</th>
-
 								<th>Price</th>
 								<th>Qty</th>
 								<th>Sub Total</th>

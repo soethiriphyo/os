@@ -56,7 +56,7 @@ class OrderController extends Controller
 
             if ($row->discount) {
             $total+=($row->discount * $row->qty);
-                
+                    
             }else{
             $total+=($row->price * $row->qty);
             }
@@ -90,7 +90,9 @@ class OrderController extends Controller
      */
     public function show($id)
     {
-        //
+        $order = Order::find($id);
+
+        return view('backend.orders.show',compact('order'));
     }
 
     /**

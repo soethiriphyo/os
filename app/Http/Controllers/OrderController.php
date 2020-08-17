@@ -58,12 +58,8 @@ class OrderController extends Controller
             $total+=($row->discount * $row->qty);
                 
             }else{
-                 $total+=($row->price * $row->qty);
+            $total+=($row->price * $row->qty);
             }
-
-            // $total+=($row->price * $row->qty);
-
-           
 
         }
 
